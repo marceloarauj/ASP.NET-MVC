@@ -1,0 +1,20 @@
+﻿.posicionado {
+    justify-content: center;
+   
+}
+.tela_login{
+    width: 200px;
+    text-align:center;
+    position:relative;
+    top:200px;
+}
+.tela_login input{
+    text-align:center;
+    border-radius: 20px;
+    width:190px;
+    margin-top:10px;
+    margin-bottom: 7px;
+}
+.tela_login input:focus{
+    outline:none;
+}
