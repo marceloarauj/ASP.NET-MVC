@@ -11,11 +11,11 @@ namespace ModeloAspCoreMVC.Compartilhado
         public static Dictionary<string,List<string>> executarQuery(string query)
         {
             NpgsqlConnection consulta = 
-                new NpgsqlConnection("Server=127.0.0.1;Port=5432;User Id=postgres Password=1234;Database=github");
+                new NpgsqlConnection("Server=127.0.0.1;Port=5432;User Id=postgres; Password=1234;Database=github");
 
             consulta.Open();
 
-            NpgsqlCommand comando = new NpgsqlCommand(query);
+            NpgsqlCommand comando = new NpgsqlCommand(query,consulta);
 
             NpgsqlDataReader ler = comando.ExecuteReader();
 
