@@ -24,7 +24,6 @@ namespace ModeloAspCoreMVC.Areas.Usuario.Controllers
         {
             if (Autorizacao.EhAutorizado(contexto))
             {
-                ViewData["Nome"] = Autorizacao.getUsuario(contexto).Nome;
                 return View();
             }
             else

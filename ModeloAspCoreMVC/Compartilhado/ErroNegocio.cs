@@ -7,6 +7,9 @@ namespace ModeloAspCoreMVC.Compartilhado
 {
     public class ErroNegocio:Exception
     {
-        
+       public ErroNegocio(string erro):base(erro)
+        {
+            
+        }
     }
 }

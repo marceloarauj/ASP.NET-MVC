@@ -29,8 +29,6 @@ namespace ModeloAspCoreMVC.Areas.Usuario.Controllers
 
             Autorizacao.Autorizar(contexto, user);
 
-            Dictionary<string,List<string>> users = BancoUtil.executarQuery("select * from usuario");
-            
             return "Usuario/Perfil";
         }
         
